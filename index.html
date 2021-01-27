@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <title>Relationship Testing</title>
+        <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
+        <link rel="stylesheet" href="app/main.css">
+
+        <script>
+            var locationPath = location.pathname.replace(/\/[^/]+$/, "");
+            window.dojoConfig = {
+                packages: [
+                    {
+                        name: "app",
+                        location: locationPath + "/app"
+                    }
+                ]
+            };
+        </script>
+        <script src="https://js.arcgis.com/4.18"></script>
+    </head>
+    <body>
+        <div id="viewDiv"></div>
+        <div id="infoDiv" class="esri-widget">
+            <input type="checkbox" id="descriptive-labels" class="esri-widget">
+            Show descriptive labels
+            <div id="legendDiv"></div>
+        </div>
+        <div id="panelDiv" class="esri-widget">
+            <div id="description" class="esri-widget">
+                Choose two fields to explore their relationship
+            </div>
+        </div>
+
+        <script>require(["app/main"]);</script>
+    </body>
+</html>

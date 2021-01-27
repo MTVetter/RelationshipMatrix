@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "module": "amd",
+        "lib": [
+            "dom",
+            "ES2015.Promise",
+            "es5",
+            "es6"
+        ],
+        "target": "es5",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "jsx": "react",
+        "jsxFactory": "tsx",
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "isolatedModules": false,
+        "experimentalDecorators": true,
+        "declaration": false,
+        "noLib": false,
+        "preserveConstEnums": true,
+        "suppressImplicitAnyIndexErrors": true,
+        "sourceMap": true,
+        "importHelpers": true
+    },
+    "include": [
+        "./app/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
